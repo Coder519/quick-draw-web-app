@@ -1,65 +1,67 @@
-body {
-          font-family: 'Nunito', sans-serif;
-          background-image: url("background");
-          color: #ff0101;
-      }
-      
-      span {
-          font-size: 24px;
-      }
-      
-      #score {
-          margin-left: -1150px;
-      }
-      
-      #timer {
-          float: right;
-          margin-right: 35px;
-      }
-      
-      #sketch_to_be_drawn {
-          font-weight: bold;
-      }
-
-      p{
-                color: royalblue;
-                font-size: 25px;
-                font-family: 'Courier New', Courier, monospace;
-      }
-
-      span{
-                color: aliceblue;
-                font-size: 20px;
-                
-      }
-
-      #show_sketch
-{
-  float:right;
+body{
+  background-image: url("background");
+  font-family: 'Indie Flower', cursive;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-weight: 900;
+}
+h1{
+  color: rgb(255, 255, 255);
+  background: linear-gradient;
+  font-family: 'Fredericka the Great', cursive;
+  padding-left: 120px;
+}
+#show_sketch{
+  float: right;
+}
+p{
+  padding-top: 10px;
+  font-size: 25px;
+  color:royalblue;
+}
+#timer{
+  float: right;
+  margin-right: 5px;
+  font-size: 20px;
 }
 
-canvas 
-  {
-    border:5px solid white;
-    border-radius:20px;
-    margin-top:150px;
-    box-shadow:5px 5px 5px grey;
-    box-shadow: 1px 1px 38px #ffffff;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+#sketch_to_be_drawn{
+  font-family: 'Fredericka the Great', cursive;
+  color: red;
 }
-@keyframes example {
 
-  from {box-shadow: 1px 1px 38px blue;}
-  to {box-shadow: 1px 1px 38px green;}
-
+canvas {
+  border-radius: 15px;
+  border: 3px soild white;
+  animation-name: canvas_ani;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  margin-top: 150px;
 }
 
 
-p, span
-  {
-    padding-top:10px;
-    font-size:25px;
-    
+@keyframes canvas_ani {
+  0% {
+      box-shadow: 10px 10px rgb(252, 3, 3), -1em 0 .4em rgb(252, 3, 3);
   }
+
+  25% {
+      box-shadow: 10px 10px rgb(252, 248, 3), -1em 0 .4em rgb(252, 248, 3);
+  }
+
+  50% {
+      box-shadow: 10px 10px rgb(3, 252, 11), -1em 0 .4em rgb(3, 252, 11);
+  }
+
+  75% {
+      box-shadow: 10px 10px rgb(3, 244, 252), -1em 0 .4em rgb(3, 244, 252);
+  }
+
+  100% {
+      box-shadow: 10px 10px rgb(30, 255, 0), -1em 0 .4em rgb(30, 255, 0);
+  }
+}
+span{
+ color: limegreen;
+}
